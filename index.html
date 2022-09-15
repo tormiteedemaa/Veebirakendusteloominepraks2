@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="res/images/favicon.ico">
+    <title>My Dashboard</title>
+</head>
+<body>
+<header>
+    <strong>Welcome to your dashboard!</strong>
+</header>
+
+<section>
+    <div>
+		 <h3>My Picture</h3>
+        <img src="res/images/me.png" width="128" height="128" alt="My picture">
+    </div>
+    <div>
+        <ul>
+            <li>Tormi Teedemaa</li>
+            <li> A date following this format 15/09/2022</li>
+            <li> Computer science </li>
+        </ul>
+    </div>
+    <div>
+        <strong>2.65</strong>
+    </div>
+</section>
+
+<section>
+    <h1>Courses</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>#</th>
+            <th>Course Title</th>
+            <th>Semester</th>
+            <th>Grade</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+		
+            <td>1</td>
+            <td> <a href="https://courses.cs.ut.ee/2022/ASD/fall" target="_blank">Agile software development</a></td>
+            <td>fall</td>
+            <td>82</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td> <a href="https://courses.cs.ut.ee/2022/systemsmodelling/fall" target="_blank">Systems modelling</a></td>
+            <td>fall</td>
+            <td>85</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td> <a href="https://courses.cs.ut.ee/2022/RE/fall" target="_blank">Requirements Engineering</a></td>
+            <td>fall</td>
+            <td>99</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td> <a href="https://courses.cs.ut.ee/2022/HCI/fall" target="_blank">Human Computer Interaction</a></td>
+            <td>fall</td>
+            <td>65</td>
+        </tr>
+		<tfoot>
+		<tr>
+		 <td> <a href="https://courses.cs.ut.ee/2022/ASD/fall" target="_blank">Agile software development</a></td>
+		  <td> <a href="https://courses.cs.ut.ee/2022/systemsmodelling/fall" target="_blank">Systems modelling</a></td>
+		   <td> <a href="https://courses.cs.ut.ee/2022/RE/fall" target="_blank">Requirements Engineering</a></td>
+        <td> <a href="https://courses.cs.ut.ee/2022/HCI/fall" target="_blank">Human Computer Interaction</a></td>
+		</tr>
+		
+		</tfoot>
+    </table>
+</section>
+<footer>
+    <ul>
+        <li>
+            <a href="https://ois2.ut.ee/" target="_blank">OIS</a>
+        </li>
+        <li>
+            <a href="https://courses.cs.ut.ee/" target="_blank">Courses</a>
+        </li>
+    </ul>
+</footer>
+<form>
+ <label for="Ctitle">Course title:</label><br>
+ <input type="text" id="Ctitle" name="Ctitle"><br>
+  <label for="Semester">Semester:</label>
+  <select id="Semester" name="Semester">
+    <option value="Fall">Fall</option>
+    <option value="Spring">Spring</option>
+  </select>
+  <br>
+  <b>Attendance</b><br>
+  <input type="radio" id="Virtual" name="Attendance" value="Virtual">
+  <label for="Virtual">Virtual attendance</label><br>
+  <input type="radio" id="physical" name="Attendance" value="physical">
+  <label for="physical">Physical attendance</label><br>
+   <input type="submit" value="Submit">
+</form>
+</body>
+</html>
